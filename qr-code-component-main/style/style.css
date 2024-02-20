@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+}
+
+html {
+    background: var(--White);
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+figure {
+    margin: 0;
+    padding: 0;
+    
+}
+.principal {   
+    display: flex;
+    flex-direction: column;
+    background: var(--Lightgray);
+    height: 100vh;
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%;    
+}
+.fondo {
+    border-radius: 30px;    
+    margin: auto;  
+}
+.imagen {    
+    border-radius: 30px;
+    width: 300px;    
+    margin: auto;
+    display: flex;    
+    background: var(--White);
+    height: 105% ;
+    flex-direction: column;
+}
+.parrafos{
+    display: flex;    
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    border-radius: 20px;
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+}
+h1 {
+    color: var(--Darkblue);
+    text-align: center;
+    width: 80%;    
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+p {
+    color: var(--Grayishblue);
+    font-size: 0.80rem;
+    width: 70%;    
+    text-align: center;
+    font-weight: 300;
+}
+
+footer{
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--Darkblue);
+    margin-bottom: 0.35rem;
+}
+
+a:active, a:hover, a:link, a:visited {
+    color:var(--Darkblue);    
+}
+a:hover{
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:1440px){
+    footer{
+        display: none;
+    }    
+    h1{
+        font-size: 1.45rem;
+        width: 93%;
+        font-weight: 700;
+    }
+    p{
+        font-size: 1rem;
+        width: 86%;
+        font-weight: 300;
+    }
+    .imagen{
+        height: 105%;
+    }
+}
